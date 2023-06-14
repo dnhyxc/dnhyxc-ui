@@ -15,7 +15,7 @@ interface IProps {
   className?: string;
 }
 
-const Button: FC<IProps> = ({ children, type, text }) => {
+const Button: FC<IProps> = ({ children, type, text, className }) => {
   return (
     <AntdButton type={type} className={className}>
       {children || text}
