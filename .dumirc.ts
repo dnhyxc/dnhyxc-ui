@@ -52,4 +52,35 @@ export default defineConfig({
     // 配置入口文件路径，API 解析将从这里开始
     entryFile: './src/index.ts',
   },
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
+  alias: {
+    '@styles': '/styles',
+  },
+  // 修改dumi主题色
+  theme: {
+    '@c-primary': '#ff9900',
+    '@primary-color': '#ff9900',
+  },
+  cssMinifierOptions: {
+    cssMinifier: 'esbuild',
+    cssMinifierOptions: {
+      minifyWhitespace: true,
+      minifySyntax: true,
+    },
+  },
+  // lessLoader: {
+  //   modifyVars: {
+  //     hack: `true; @import "./styles/index.less"`,
+  //   },
+  //   javascriptEnabled: true,
+  // },
 });

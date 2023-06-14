@@ -1,19 +1,25 @@
+import { Button as AntdButton } from 'antd';
 import React, { type FC } from 'react';
 
-const Button: FC<{
-  children?: React.ReactElement;
-  type: string;
+interface IProps {
+  children?: React.ReactElement | string;
+  type?:
+    | 'text'
+    | 'link'
+    | 'ghost'
+    | 'default'
+    | 'primary'
+    | 'dashed'
+    | undefined;
   text: string;
-}> = ({ children, type, text }) => {
-  console.log(children, 'children');
+  className?: string;
+}
 
+const Button: FC<IProps> = ({ children, type, text }) => {
   return (
-    <button
-      type="button"
-      className={type === 'primary' ? 'primary' : 'default'}
-    >
+    <AntdButton type={type} className={className}>
       {children || text}
-    </button>
+    </AntdButton>
   );
 };
 

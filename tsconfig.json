@@ -9,8 +9,10 @@
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "dnhyxc-ui": ["src"],
-      "dnhyxc-ui/*": ["src/*", "*"]
+      "dnhyxc-ui/*": ["src/*", "*"],
+      "@styles": ["styles"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*"]
+  // 加入 "./typings.d.ts" 解决找不到模块“./index.less”或其相应的类型声明的问题
+  "include": [".dumi/**/*", ".dumirc.ts", "src/**/*", "./typings.d.ts"]
 }
