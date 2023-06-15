@@ -8,6 +8,7 @@ export default defineConfig({
     name: 'dnhyxc-ui',
     logo: '/logo.png', // 配置站点logo
     showLineNum: true, // 显示代码块行号
+    rtl: true,
     socialLinks: {
       github: 'https://github.com/dnhyxc',
     },
@@ -46,6 +47,10 @@ export default defineConfig({
         },
       ],
     },
+    footer: `Copyright © ${new Date().getFullYear()}
+      <br/>
+      Powered by <a href="https://github.com/dnhyxc">dnhyxc</a>
+    `,
   },
   apiParser: {},
   resolve: {
@@ -68,19 +73,18 @@ export default defineConfig({
   // 修改dumi主题色
   theme: {
     '@c-primary': '#ff9900',
-    '@primary-color': '#ff9900',
   },
-  cssMinifierOptions: {
-    cssMinifier: 'esbuild',
-    cssMinifierOptions: {
-      minifyWhitespace: true,
-      minifySyntax: true,
-    },
-  },
-  // lessLoader: {
-  //   modifyVars: {
-  //     hack: `true; @import "./styles/index.less"`,
+  // cssMinifierOptions: {
+  //   cssMinifier: 'esbuild',
+  //   cssMinifierOptions: {
+  //     minifyWhitespace: true,
+  //     minifySyntax: true,
   //   },
-  //   javascriptEnabled: true,
   // },
+  lessLoader: {
+    modifyVars: {
+      hack: `true; @import "@styles/index"`,
+    },
+    javascriptEnabled: true,
+  },
 });

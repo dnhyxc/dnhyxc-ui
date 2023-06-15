@@ -1,24 +1,21 @@
-// 修改 Antd 标题字体大小和颜色
-@heading-color: #333;
-
-@font-size-base: 18px;
-
 // 修改 Antd 主色调
 @primary-color: #ff9900;
 
 // 按钮颜色
 @btn-primary-color: #ff9900;
 
+// 修改dumi主题色
+@c-primary: #ff9900;
+
 // 修改一些常用样式，如按钮、表单、卡片等
 .ant-btn {
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.ant-form-item-label {
-  padding: 0 12px;
-}
+.ant-btn-primary {
+  background-color: @btn-primary-color;
 
-.ant-card {
-  border-radius: 4px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 15%);
+  &:hover {
+    background-color: @btn-primary-color !important;
+  }
 }
