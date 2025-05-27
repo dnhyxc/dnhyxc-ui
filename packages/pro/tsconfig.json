@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES2021"],
+    "target": "ES2019",
+    "module": "ESNext",
+    // moduleResolution 用于指定 TypeScript 如何解析模块
+    // "bundler" 表示使用与打包工具(如 Webpack、Vite 等)兼容的模块解析策略
+    // 它支持 package.json 的 "exports" 字段，并遵循现代打包工具的模块解析规则
+    "moduleResolution": "bundler",
+    // 不生成输出文件
+    "noEmit": true,
+    // 跳过声明文件的类型检查，可以提高编译速度
+    "skipLibCheck": true,
+    // 确保每个文件都可以安全地进行单独编译，有助于某些打包工具（如 Babel）的处理
+    "isolatedModules": true,
+    // 启用所有严格的类型检查选项
+    "strict": true,
+    // 允许使用 import 默认导入语法导入 CommonJS 模块
+    "esModuleInterop": true,
+    // 确保派生类中的方法使用 override 关键字来显式声明覆盖基类方法
+    "noImplicitOverride": true,
+    // 报告未使用的局部变量的错误
+    "noUnusedLocals": true,
+    // 允许导入 JSON 模块
+    // 在 catch 语句中不使用 unknown 类型（使用 any 类型）
+    "useUnknownInCatchVariables": false,
+    "resolveJsonModule": true,
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
+    // typeRoots 用于指定类型声明文件的根目录，TypeScript 会在这些目录下查找类型定义文件
+    // ./types 是项目本地的类型声明文件目录
+    // ./node_modules/@types 是第三方库的类型声明文件目录
+    // "typeRoots": ["./types", "./node_modules/@types"],
+    // ... existing code ...
+    // "types": ["vite/client"], // 添加这行以支持Vue类型
+    "baseUrl": ".", // 引入模块的方式
+    // 路径别名配置
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.vue", "src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

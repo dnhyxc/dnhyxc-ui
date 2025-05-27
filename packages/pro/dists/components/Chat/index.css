@@ -1,0 +1,31 @@
+.ai-pop--agent .ai-agent-entry__page {
+  border: none;
+  padding: 0 16px 16px;
+}
+
+.ai-chat--arrange, .ai-chat--arrange .ai-input-toolbar-btn, .ai-chat--arrange .ai-input-action, .ai-chat--arrange .ai-welcome-box {
+  pointer-events: none;
+}
+
+.ai-robot-item:after {
+  content: "";
+  pointer-events: none;
+  background-color: #000c;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: 10px;
+  animation: 1s infinite pulse;
+  display: none;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%)scale(1);
+  }
+
+  50% {
+    transform: translate(-50%, -50%)scale(1.2);
+  }
+}
+

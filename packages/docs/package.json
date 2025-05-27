@@ -1,0 +1,25 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rspress build",
+    "check": "biome check --write",
+    "dev": "rspress dev",
+    "format": "biome format --write",
+    "preview": "rspress preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dnhyxc-ui/base": "workspace:*",
+    "@dnhyxc-ui/pro": "workspace:*"
+  },
+  "devDependencies": {
+    "@rspress/plugin-api-docgen": "^1.44.0",
+    "@rspress/plugin-preview": "^1.44.0",
+    "rspress": "^1.10.0"
+  }
+}

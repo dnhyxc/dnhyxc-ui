@@ -1,0 +1,425 @@
+*, :before, :after, ::backdrop {
+  --un-rotate: 0;
+  --un-rotate-x: 0;
+  --un-rotate-y: 0;
+  --un-rotate-z: 0;
+  --un-scale-x: 1;
+  --un-scale-y: 1;
+  --un-scale-z: 1;
+  --un-skew-x: 0;
+  --un-skew-y: 0;
+  --un-translate-x: 0;
+  --un-translate-y: 0;
+  --un-translate-z: 0;
+  --un-pan-x: ;
+  --un-pan-y: ;
+  --un-pinch-zoom: ;
+  --un-scroll-snap-strictness: proximity;
+  --un-ordinal: ;
+  --un-slashed-zero: ;
+  --un-numeric-figure: ;
+  --un-numeric-spacing: ;
+  --un-numeric-fraction: ;
+  --un-border-spacing-x: 0;
+  --un-border-spacing-y: 0;
+  --un-ring-offset-shadow: 0 0 #0000;
+  --un-ring-shadow: 0 0 #0000;
+  --un-shadow-inset: ;
+  --un-shadow: 0 0 #0000;
+  --un-ring-inset: ;
+  --un-ring-offset-width: 0px;
+  --un-ring-offset-color: #fff;
+  --un-ring-width: 0px;
+  --un-ring-color: #93c5fd80;
+  --un-blur: ;
+  --un-brightness: ;
+  --un-contrast: ;
+  --un-drop-shadow: ;
+  --un-grayscale: ;
+  --un-hue-rotate: ;
+  --un-invert: ;
+  --un-saturate: ;
+  --un-sepia: ;
+  --un-backdrop-blur: ;
+  --un-backdrop-brightness: ;
+  --un-backdrop-contrast: ;
+  --un-backdrop-grayscale: ;
+  --un-backdrop-hue-rotate: ;
+  --un-backdrop-invert: ;
+  --un-backdrop-opacity: ;
+  --un-backdrop-saturate: ;
+  --un-backdrop-sepia: ;
+}
+
+.pointer-events-auto {
+  pointer-events: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.right--14 {
+  right: -14px;
+}
+
+.top-50\% {
+  top: 50%;
+}
+
+.line-clamp-1 {
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+.z-100 {
+  z-index: 100;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.block {
+  display: block;
+}
+
+.\[\&_\.icon-delete\]\:hover\:\!block:hover .icon-delete, .after\:block\!:after {
+  display: block !important;
+}
+
+.\[\&\>div\:not\(\.switch\)\]\:hidden > div:not(.switch), .hidden {
+  display: none;
+}
+
+.h-30 {
+  height: 30px;
+}
+
+.h-32 {
+  height: 32px;
+}
+
+.h-36 {
+  height: 36px;
+}
+
+.h-40 {
+  height: 40px;
+}
+
+.h-44 {
+  height: 44px;
+}
+
+.h-50\% {
+  height: 50%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h5 {
+  height: 5px;
+}
+
+.max-w-100\% {
+  max-width: 100%;
+}
+
+.max-w-80\% {
+  max-width: 80%;
+}
+
+.max-w-90\% {
+  max-width: 90%;
+}
+
+.min-h-0 {
+  min-height: 0;
+}
+
+.w-0 {
+  width: 0;
+}
+
+.w-14 {
+  width: 14px;
+}
+
+.w-230 {
+  width: 230px;
+}
+
+.w-30 {
+  width: 30px;
+}
+
+.w-32 {
+  width: 32px;
+}
+
+.w-6 {
+  width: 6px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-shrink-0, .shrink-0 {
+  flex-shrink: 0;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.table {
+  display: table;
+}
+
+.translate-y--50\% {
+  --un-translate-y: -50%;
+  transform: translateX(var(--un-translate-x)) translateY(var(--un-translate-y)) translateZ(var(--un-translate-z)) rotate(var(--un-rotate)) rotateX(var(--un-rotate-x)) rotateY(var(--un-rotate-y)) rotateZ(var(--un-rotate-z)) skewX(var(--un-skew-x)) skewY(var(--un-skew-y)) scaleX(var(--un-scale-x)) scaleY(var(--un-scale-y)) scaleZ(var(--un-scale-z));
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: 1s linear infinite spin;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.rounded-4 {
+  border-radius: 4px;
+}
+
+.rounded-6 {
+  border-radius: 6px;
+}
+
+.rounded-8, .rounded-lg {
+  border-radius: 8px;
+}
+
+.bg-\#E7EDFB {
+  --un-bg-opacity: 1;
+  background-color: rgb(231 237 251 / var(--un-bg-opacity));
+}
+
+.bg-\#f7f8f9 {
+  --un-bg-opacity: 1;
+  background-color: rgb(247 248 249 / var(--un-bg-opacity));
+}
+
+.bg-white {
+  --un-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--un-bg-opacity));
+}
+
+.hover\:bg-\#F1F1F1:hover {
+  --un-bg-opacity: 1;
+  background-color: rgb(241 241 241 / var(--un-bg-opacity));
+}
+
+.hover\:bg-white:hover {
+  --un-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--un-bg-opacity));
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.px-16 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.px-28 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.px-8 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.pb-12 {
+  padding-bottom: 12px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+
+.pt-22 {
+  padding-top: 22px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.\[\&\:hover_\.ai-history__title\]\:text-\#5E37FF:hover .ai-history _title {
+  --un-text-opacity: 1;
+  color: rgb(94 55 255 / var(--un-text-opacity));
+}
+
+.font-500 {
+  font-weight: 500;
+}
+
+.font-600 {
+  font-weight: 600;
+}
+
+.shadow-\[_0_-2px_10px_0_\#0000001a\] {
+  --un-shadow: 0 -2px 10px 0 #0000001a;
+  box-shadow: var(--un-ring-offset-shadow), var(--un-ring-shadow), var(--un-shadow);
+}
+
+.duration-500 {
+  transition-duration: .5s;
+}
+
+.shadow-none {
+  box-shadow: none;
+}
+
+.outline-solid {
+  outline-style: solid;
+}
+
+:root {
+  --text-color: #262a30;
+  --text-color-secondary: #959ba3;
+  --border-color: #f5f5f5;
+}
+
+.dark {
+  --text-color: #f0f0f0;
+  --text-color-secondary: #959ba3;
+  --border-color: #333;
+}
+

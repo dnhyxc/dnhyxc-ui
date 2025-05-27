@@ -1,0 +1,23 @@
+{
+  "name": "dnhyxc-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rspack serve",
+    "build": "rspack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.3",
+    "vue": "^3.5.14"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-less": "^1.2.4",
+    "@rsbuild/plugin-vue": "^1.0.7",
+    "@rslib/core": "^0.7.1"
+  }
+}

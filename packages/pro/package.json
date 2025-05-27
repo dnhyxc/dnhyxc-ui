@@ -1,0 +1,37 @@
+{
+  "name": "@dnhyxc-ui/pro",
+  "version": "1.0.0",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "biome format --write",
+    "test": "vitest run"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.8.3",
+    "vue": "^3.5.14"
+  },
+  "devDependencies": {
+    "@rsbuild/plugin-less": "^1.2.4",
+    "@rsbuild/plugin-vue": "^1.0.7",
+    "@rslib/core": "^0.7.1"
+  }
+}
