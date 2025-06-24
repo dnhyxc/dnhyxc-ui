@@ -20,6 +20,8 @@
   "devDependencies": {
     "@rspress/plugin-api-docgen": "^1.44.0",
     "@rspress/plugin-preview": "^1.44.0",
+    "@rspress/shared": "^1.44.0",
+    "@types/react": "^19.0.8",
     "rspress": "^1.10.0"
   }
 }

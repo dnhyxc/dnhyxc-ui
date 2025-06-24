@@ -2,6 +2,7 @@ import * as path from 'node:path';
 import { defineConfig } from 'rspress/config';
 import { pluginPreview } from '@rspress/plugin-preview';
 import { pluginApiDocgen } from '@rspress/plugin-api-docgen';
+import { customPlugin } from './custom-plugin';
 
 export default defineConfig({
   title: 'dnhyxc-ui',
@@ -36,6 +37,9 @@ export default defineConfig({
         },
       ],
     },
+    // 翻页文本配置
+    prevPageText: '上一页',
+    nextPageText: '下一页',
   },
   plugins: [
     pluginPreview({
@@ -48,5 +52,6 @@ export default defineConfig({
       },
       apiParseTool: 'react-docgen-typescript',
     }),
+    customPlugin()
   ],
 });

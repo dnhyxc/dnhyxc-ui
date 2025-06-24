@@ -19,7 +19,7 @@ const Button: React.FC<IButtonProps> = ({ children, disabled, onClick }) => {
   };
   return (
     <div className="buttonwrap">
-      <h1>this is a Button</h1>
+      <h1 className="h1">this is a Button</h1>
       <button disabled={disabled} onClick={handleClick}>
         {children}
       </button>
