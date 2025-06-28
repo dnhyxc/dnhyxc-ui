@@ -17,10 +17,10 @@ importers:
     devDependencies:
       '@rsbuild/plugin-less':
         specifier: ^1.2.4
-        version: 1.2.4(@rsbuild/core@1.3.19)
+        version: 1.2.4(@rsbuild/core@1.3.20)
       '@rsbuild/plugin-vue':
         specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.3.19)(vue@3.5.14(typescript@5.8.3))
+        version: 1.0.7(@rsbuild/core@1.3.20)(vue@3.5.14(typescript@5.8.3))
       '@rslib/core':
         specifier: ^0.7.1
         version: 0.7.1(typescript@5.8.3)
@@ -114,6 +114,9 @@ importers:
       vite:
         specifier: ^6.1.0
         version: 6.3.5(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)
+      vue-loader:
+        specifier: ^17.4.2
+        version: 17.4.2(vue@3.5.14(typescript@5.7.3))(webpack@5.99.8)
       vue-tsc:
         specifier: ^2.2.0
         version: 2.2.10(typescript@5.7.3)
@@ -175,13 +178,16 @@ importers:
     devDependencies:
       '@rsbuild/plugin-less':
         specifier: ^1.2.4
-        version: 1.2.4(@rsbuild/core@1.3.20)
+        version: 1.2.4(@rsbuild/core@1.3.19)
       '@rsbuild/plugin-vue':
         specifier: ^1.0.7
-        version: 1.0.7(@rsbuild/core@1.3.20)(vue@3.5.14(typescript@5.8.3))
+        version: 1.0.7(@rsbuild/core@1.3.19)(vue@3.5.14(typescript@5.8.3))
       '@rslib/core':
         specifier: ^0.7.1
         version: 0.7.1(typescript@5.8.3)
+      rsbuild-plugin-unplugin-vue:
+        specifier: ^0.1.0
+        version: 0.1.0(@rsbuild/core@1.3.19)(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)(vue@3.5.14(typescript@5.8.3))
 
 packages:
 
@@ -2879,6 +2885,14 @@ packages:
       typescript:
         optional: true
 
+  rsbuild-plugin-unplugin-vue@0.1.0:
+    resolution: {integrity: sha512-afNgNOD0UPpQ/5Vy5A4lbNWgV5ZjOfWDB+oUKyy0AuJfmVZnzx2iTfrbgcxbeNnr8LXEnPBcBFCfDEQjFOr6Ew==}
+    peerDependencies:
+      '@rsbuild/core': '>= 1.3.19'
+    peerDependenciesMeta:
+      '@rsbuild/core':
+        optional: true
+
   rspack-plugin-virtual-module@0.1.13:
     resolution: {integrity: sha512-VC0HiVHH6dtGfTgfpbDgVTt6LlYv+uAg9CWGWAR5lBx9FbKPEZeGz7iRUUP8vMymx+PGI8ps0u4a25dne0rtuQ==}
 
@@ -3331,6 +3345,16 @@ packages:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
     engines: {node: '>= 10.0.0'}
 
+  unplugin-vue@6.2.0:
+    resolution: {integrity: sha512-/FRiRuBu8AFzeF9qetgMLrDJtBGvJTOn/TqA0DiURIYT8IMAttXajjMO7UM2oK07R5ZX3mFW+OGe/reYEq9wSQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      vue: ^3.2.25
+
+  unplugin@2.3.5:
+    resolution: {integrity: sha512-RyWSb5AHmGtjjNQ6gIlA67sHOsWpsbWpwDokLwTcejVdOjEkJZh7QKu14J00gDDVSh8kGH4KYC/TNBceXFZhtw==}
+    engines: {node: '>=18.12.0'}
+
   upath@2.0.1:
     resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==}
     engines: {node: '>=4'}
@@ -3467,6 +3491,9 @@ packages:
   webpack-sources@3.2.3:
     resolution: {integrity: sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==}
     engines: {node: '>=10.13.0'}
+
+  webpack-virtual-modules@0.6.2:
+    resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
 
   webpack@5.99.8:
     resolution: {integrity: sha512-lQ3CPiSTpfOnrEGeXDwoq5hIGzSjmwD72GdfVzF7CQAI7t47rJG9eDWvcEkEn3CUQymAElVvDg3YNTlCYj+qUQ==}
@@ -6783,6 +6810,26 @@ snapshots:
     optionalDependencies:
       typescript: 5.8.3
 
+  rsbuild-plugin-unplugin-vue@0.1.0(@rsbuild/core@1.3.19)(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)(vue@3.5.14(typescript@5.8.3)):
+    dependencies:
+      unplugin-vue: 6.2.0(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)(vue@3.5.14(typescript@5.8.3))
+    optionalDependencies:
+      '@rsbuild/core': 1.3.19
+    transitivePeerDependencies:
+      - '@types/node'
+      - jiti
+      - less
+      - lightningcss
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - tsx
+      - vue
+      - yaml
+
   rspack-plugin-virtual-module@0.1.13:
     dependencies:
       fs-extra: 11.3.0
@@ -7203,6 +7250,33 @@ snapshots:
 
   universalify@2.0.1: {}
 
+  unplugin-vue@6.2.0(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)(vue@3.5.14(typescript@5.8.3)):
+    dependencies:
+      '@vue/reactivity': 3.5.14
+      debug: 4.4.1
+      unplugin: 2.3.5
+      vite: 6.3.5(@types/node@22.15.19)(jiti@2.4.2)(sass-embedded@1.89.0)(terser@5.39.2)
+      vue: 3.5.14(typescript@5.8.3)
+    transitivePeerDependencies:
+      - '@types/node'
+      - jiti
+      - less
+      - lightningcss
+      - sass
+      - sass-embedded
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - tsx
+      - yaml
+
+  unplugin@2.3.5:
+    dependencies:
+      acorn: 8.14.1
+      picomatch: 4.0.2
+      webpack-virtual-modules: 0.6.2
+
   upath@2.0.1: {}
 
   update-browserslist-db@1.1.3(browserslist@4.24.5):
@@ -7301,6 +7375,15 @@ snapshots:
 
   vscode-uri@3.1.0: {}
 
+  vue-loader@17.4.2(vue@3.5.14(typescript@5.7.3))(webpack@5.99.8):
+    dependencies:
+      chalk: 4.1.2
+      hash-sum: 2.0.0
+      watchpack: 2.4.3
+      webpack: 5.99.8
+    optionalDependencies:
+      vue: 3.5.14(typescript@5.7.3)
+
   vue-loader@17.4.2(vue@3.5.14(typescript@5.8.3))(webpack@5.99.8):
     dependencies:
       chalk: 4.1.2
@@ -7350,6 +7433,8 @@ snapshots:
   web-namespaces@2.0.1: {}
 
   webpack-sources@3.2.3: {}
+
+  webpack-virtual-modules@0.6.2: {}
 
   webpack@5.99.8:
     dependencies:
