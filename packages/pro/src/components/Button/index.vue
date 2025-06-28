@@ -20,18 +20,17 @@ interface Button {
 
 const count = ref<Button>({
   count: 0,
-  text: 'is a Button'
+  text: 'this is a Button'
 });
 const onClick = () => {
   count.value.count++;
-  count.value.text = 'is a Button' + count.value.count;
+  count.value.text = 'this is a Button' + count.value.count;
   console.log('count', count.value);
 };
 </script>
 <style scoped lang="less">
 .button {
-  width: 100px;
   height: 32px;
-  background-color: beige;
+  background-color: skyblue;
 }
 </style>

@@ -20,8 +20,7 @@ const onClick = () => {
 };
 </script>
 <style scoped lang="less">
-.button {
-  width: 100px;
+.video {
   height: 32px;
   background-color: beige;
 }
